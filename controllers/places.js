@@ -1,4 +1,10 @@
 const router = require('express').Router()
+const express = require('express')
+const app = express()
+
+app.post('/places', (req, res) => {
+  console.log(req.body)
+})
 
 router.get('/', (req, res) => {
     let places = [{
